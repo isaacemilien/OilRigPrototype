@@ -38,5 +38,12 @@ public class EnemyController : MonoBehaviour
     #endregion
 
     #region METHODS 
+    private void OnTriggerEnter2D(Collider2D collision)
+    {
+        if(collision.tag == "Player")
+        {
+            Debug.Log("Caught u lacking");
+        }
+    }
     #endregion
 }

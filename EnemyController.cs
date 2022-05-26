@@ -5,6 +5,17 @@ using UnityEngine;
 public class EnemyController : MonoBehaviour
 {
     #region FIELDS
+    // Characteristics
+    [SerializeField] string[] vulnerabilities = {"Naive", "Over-agree"};
+    [SerializeField] float strength;
+    [SerializeField] string profession;
+    [SerializeField] float trust;
+    [SerializeField] float health;
+    [SerializeField] float sanity;
+     
+
+
+    // Movement
     [SerializeField] float speed = 2.0f;
 
     [SerializeField] GameObject firstTarget;
